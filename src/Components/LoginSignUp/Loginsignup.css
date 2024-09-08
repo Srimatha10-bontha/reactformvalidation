@@ -1,0 +1,131 @@
+.container {
+    background-color: white;
+    width: 80%;
+    max-width: 500px; /* Ensures it doesn’t get too wide on large screens */
+    height: 600px;
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.header {
+    padding: 23px;
+    text-align: center; /* Centers the text */
+    color: blue;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.form {
+    padding: 20px;
+    position: relative; /* Position relative to manage children elements */
+}
+
+div {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+input {
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%; /* Makes the input fields take full width of their container */
+    outline: none;
+    background-color: whitesmoke;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    width: 48%; /* Each button takes up half of the width with some space between */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#pw {
+    font-size: 20px;
+    font-weight: 100;
+    color: blue;
+    margin-top: 20px;
+}
+
+#span {
+    color: green;
+}
+
+.sbtn {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    width:150px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .sbtn {
+        width:100px; /* Button takes full width on smaller screens */
+        max-width: none; /* Removes the max-width constraint */
+    }
+}
+@media (max-width: 576px) {
+    .sbtn {
+        width:100px; /* Button takes full width on smaller screens */
+        max-width: none; /* Removes the max-width constraint */
+    }
+}
+
+
+
+.lbtn {
+    background-color: green;
+    color: white;
+}
+
+#gray {
+    background-color: #EAEAEA;
+    color: #676767;
+}
+
+.error {
+    color: rgb(217, 9, 9);
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto; /* Adjust height to content */
+    }
+
+    .header {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Make buttons stack vertically on smaller screens */
+        margin: 10px 0;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 60%;
+        height: auto; /* Adjust height to content */
+    }
+
+    .header {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Make buttons stack vertically on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+
